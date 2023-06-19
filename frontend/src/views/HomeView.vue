@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld />
+  <BodyComponent />
   <FooterComponent />
 </template>
 
@@ -7,14 +7,14 @@
 import { defineComponent } from 'vue';
 
 // Components
-import HelloWorld from '../components/HelloWorld.vue';
+import BodyComponent from '../components/BodyComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue'
 
 export default defineComponent({
   name: 'HomeView',
 
   components: {
-      HelloWorld,
+      BodyComponent,
       FooterComponent,
   },
 });

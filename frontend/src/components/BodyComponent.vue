@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
-          :src="require('../assets/computer.png')"
+          :src="require('../assets/PC.png')"
           class="my-3"
           contain
           height="500"
@@ -21,7 +21,7 @@
 <script>
 
 export default {
-  name: 'HelloWorld',
+  name: 'BodyComponent',
 
   data: () => ({
 
