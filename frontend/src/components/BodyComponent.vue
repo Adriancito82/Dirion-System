@@ -33,6 +33,5 @@ export default {
 #container {
     background-color: rgb(214, 211, 7);
     height: 100%;
-    width: 100%;
 }
 </style>
