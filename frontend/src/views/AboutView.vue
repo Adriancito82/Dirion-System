@@ -1,5 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="text-center">
+    <h1>Esto está en construcción</h1>
   </div>
+  <v-btn to="/">Volver al Home 🔥</v-btn>
 </template>

@@ -12,7 +12,7 @@
     </v-row>
     <v-row justify="center">
         <v-col cols="auto">
-        <v-btn>Bienvenidos, pulsa para entrar</v-btn>
+        <v-btn to="/about">Bienvenidos, pulsa para entrar</v-btn>
     </v-col>
     </v-row>
   </v-container>
