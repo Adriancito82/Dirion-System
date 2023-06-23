@@ -1,15 +1,14 @@
 const router = require('express').Router()
 
-/*const {
+const {
     checkAuth,
     checkRolAdmin
-} = require('../utils')*/
+} = require('../utils')
 
 const {
     singup,
     login,
     getUserById,
-    getAllUsers,
     updateUserById,
     deleteUserById,
 
@@ -19,7 +18,6 @@ router
     .post('/signup', singup)
     .post('/login', login)
 
-    .get('/', checkAuth, checkRolAdmin, getAllUsers)
     .get('/:id', checkAuth, checkRolAdmin, getUserById)
 
     .put('/:id', checkAuth, checkRolAdmin, updateUserById)

@@ -8,7 +8,7 @@ async function singup(req, res) {
         const user = await UserModel.create(req.body)
         const payload = { email: user.email }
         const token = jwt.sign(payload, process.env.SECRET, { expiresIn: '5h' })
-        res.status(200).json({ email: user.email, userId: user.id, rol: user.rol, token: token })
+        res.status(200).json({ email: user.email, userId: user.id, token: token })
 
     } catch (error) {
         console.log(error)
@@ -26,7 +26,7 @@ async function login(req, res) {
         })
         const payload = { email: user.email }
         const token = jwt.sign(payload, process.env.SECRET, { expiresIn: '5h' })
-        res.status(200).json({ email: user.email, userId: user.id, rol: user.rol, token: token })
+        res.status(200).json({ email: user.email, userId: user.id, token: token })
     } catch (error) {
         console.log(error)
     }
@@ -40,15 +40,6 @@ async function getUserById(req, res) {
         console.log(error)
     }
 
-}
-
-async function getAllUsers(req, res) {
-    try {
-        const allUsers = await UserModel.find()
-        res.json(allUsers)
-    } catch (error) {
-        console.log(error)
-    }
 }
 
 async function updateUserById(req, res) {
@@ -74,7 +65,6 @@ module.exports = {
     singup,
     login,
     getUserById,
-    getAllUsers,
     updateUserById,
     deleteUserById,
 }

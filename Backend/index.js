@@ -17,7 +17,7 @@ console.log('Connected to DB')
     .use(cors('*'))
     .use(morgan('dev'))
     .use(express.json())
-    .use('/API',require('@/API/routes'))
+    .use('/API',require('../API/routes'))
     .listen(process.env.PORT, () => {
         console.log(`connected to port: ${process.env.PORT}`)
     })
