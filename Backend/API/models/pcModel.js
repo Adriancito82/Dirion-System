@@ -15,6 +15,6 @@ const pcSchema = new mongoose.Schema({
     }
 })
 
-const PcModel = mongoose.model('pc', pcSchema)
+const PcModel = mongoose.model('computer', pcSchema)
 
-module.exports = PcSchema
+module.exports = PcModel
